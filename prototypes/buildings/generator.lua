@@ -1,6 +1,6 @@
 RECIPE {
     type = "recipe",
-    name = "generator-1",
+    name = "bitter-generator-1",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
@@ -11,29 +11,29 @@ RECIPE {
         {"iron-gear-wheel", 40}
     },
     results = {
-        {"generator-1", 1}
+        {"bitter-generator-1", 1}
     }
 }
 
 ITEM {
     type = "item",
-    name = "generator-1",
-    icon = "__alien_power__/graphics/icons/generator-1.png",
+    name = "bitter-generator-1",
+    icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
     icon_size = 64,
     flags = {},
     subgroup = "alien-generators",
     order = "a",
-    place_result = "generator-1",
+    place_result = "bitter-generator-1",
     stack_size = 15
 }
 
 ENTITY {
     type = "burner-generator",
-    name = "generator-1",
-    icon = "__alien_power__/graphics/icons/generator-1.png",
+    name = "bitter-generator-1",
+    icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "generator-1"},
+    minable = {mining_time = 0.5, result = "bitter-generator-1"},
     max_health = 100,
     corpse = "big-remnants",
     resistances = {
@@ -63,7 +63,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a1.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a1.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -72,7 +72,7 @@ ENTITY {
                 shift = util.by_pixel(-96, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a2.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a2.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -81,7 +81,7 @@ ENTITY {
                 shift = util.by_pixel(-64, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a3.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a3.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -90,7 +90,7 @@ ENTITY {
                 shift = util.by_pixel(-32, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a4.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a4.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -99,7 +99,7 @@ ENTITY {
                 shift = util.by_pixel(-0, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a5.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a5.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -108,7 +108,7 @@ ENTITY {
                 shift = util.by_pixel(32, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a6.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a6.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -117,7 +117,7 @@ ENTITY {
                 shift = util.by_pixel(64, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a7.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a7.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -126,7 +126,7 @@ ENTITY {
                 shift = util.by_pixel(96, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/generator-1/a8.png",
+                filename = "__alien_power__/graphics/entity/bitter-generator-1/a8.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
