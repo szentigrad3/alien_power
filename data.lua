@@ -1,0 +1,5 @@
+require("prototypes.buildings.generator")
+require("prototypes.buildings.rest-camp")
+require("prototypes.items.items")
+require("prototypes.recipes.bitter")
+--require("prototypes.technology.tba")

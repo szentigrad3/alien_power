@@ -1,0 +1,11 @@
+{
+"name":"alien_power",
+"version": "0.0.1",
+"title":"Alien Power",
+"author":"Szentigrade",
+"description":"Adds bitter power",
+"factorio_version":"1.0",
+"dependencies":	[
+    "base"
+				]
+}
