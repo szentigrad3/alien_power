@@ -46,7 +46,7 @@ data:extend(
         module_slots = 4
     },
     allowed_effects = {"speed","consumption"},
-    crafting_categories = {"rest"},
+    crafting_categories = {"alien-recharge"},
     crafting_speed = 2.5,
     energy_source = {
         type = "electric",

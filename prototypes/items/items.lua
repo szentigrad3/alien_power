@@ -2,10 +2,10 @@ data:extend(
 {
 	{
     type = "item",
-    name = "charged-bitter",
+    name = "biter-power",
     icons =
 	{
-        {icon = "__alien_power__/graphics/icons/charged-bitter.png"}
+        {icon = "__alien_power__/graphics/icons/biter.png"}
     },
     icon_size = 64,
     flags = {},
@@ -14,14 +14,14 @@ data:extend(
     stack_size = 300,
     fuel_category = 'alien',
     fuel_value = '250MJ',
-    burnt_result = 'used-bitter'
+    burnt_result = 'used-biter'
 	},
 	{
     type = "item",
-    name = "used-bitter",
+    name = "used-biter",
     icons =
 	{
-        {icon = "__alien_power__/graphics/icons/bitter.png"},
+        {icon = "__alien_power__/graphics/icons/biter.png"},
         {icon = "__alien_power__/graphics/icons/tired.png"},
     },
 	icon_size = 64,
@@ -32,11 +32,11 @@ data:extend(
 	},
 	{
     type = "gun",
-    name = "bitter-gun",
-    icon = "__alien_power__/graphics/icons/bitter-gun.png",
+    name = "biter-gun",
+    icon = "__alien_power__/graphics/icons/biter-gun.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "gun",
-    order = "d[bitter-gun]",
+    order = "d[biter-gun]",
     attack_parameters =
     {
       type = "projectile",
@@ -58,8 +58,8 @@ data:extend(
 	},
 	{
     type = "ammo",
-    name = "bitter-net",
-    icon = "__alien_power__/graphics/icons/bitter-net.png",
+    name = "biter-net",
+    icon = "__alien_power__/graphics/icons/biter-net.png",
     icon_size = 64, icon_mipmaps = 4,
     ammo_type =
     {
@@ -81,12 +81,12 @@ data:extend(
       }
     },
     subgroup = "alien-power",
-    order = "d[bitter-gun]-a[basic]",
+    order = "d[biter-gun]-a[basic]",
     stack_size = 200
 	},
 	{
     type = "item",
-    name = "bitter-meat",
+    name = "biter-meat",
     icon = "__alien_power__/graphics/icons/meat.png",
     icon_size = 32,
     icon_mipmaps = 6,

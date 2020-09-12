@@ -2,7 +2,7 @@ data:extend(
 {
  {
     type = "recipe",
-    name = "bitter-generator-1",
+    name = "biter-generator-1",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
@@ -13,27 +13,27 @@ data:extend(
         {"iron-gear-wheel", 40}
     },
     results = {
-        {"bitter-generator-1", 1}
+        {"biter-generator-1", 1}
     }
 },
 {
     type = "item",
-    name = "bitter-generator-1",
-    icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
+    name = "biter-generator-1",
+    icon = "__alien_power__/graphics/icons/biter-generator-1.png",
     icon_size = 64,
     flags = {},
     subgroup = "alien-generators",
     order = "a",
-    place_result = "bitter-generator-1",
+    place_result = "biter-generator-1",
     stack_size = 15
 },
 {
     type = "burner-generator",
-    name = "bitter-generator-1",
-    icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
+    name = "biter-generator-1",
+    icon = "__alien_power__/graphics/icons/biter-generator-1.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "bitter-generator-1"},
+    minable = {mining_time = 0.5, result = "biter-generator-1"},
     max_health = 100,
     corpse = "big-remnants",
     resistances = {
@@ -63,7 +63,7 @@ data:extend(
     animation = {
         layers = {
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a1.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a1.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -72,7 +72,7 @@ data:extend(
                 shift = util.by_pixel(-96, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a2.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a2.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -81,7 +81,7 @@ data:extend(
                 shift = util.by_pixel(-64, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a3.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a3.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -90,7 +90,7 @@ data:extend(
                 shift = util.by_pixel(-32, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a4.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a4.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -99,7 +99,7 @@ data:extend(
                 shift = util.by_pixel(-0, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a5.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a5.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -108,7 +108,7 @@ data:extend(
                 shift = util.by_pixel(32, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a6.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a6.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -117,7 +117,7 @@ data:extend(
                 shift = util.by_pixel(64, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a7.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a7.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -126,7 +126,7 @@ data:extend(
                 shift = util.by_pixel(96, -32)
             },
             {
-                filename = "__alien_power__/graphics/entity/bitter-generator-1/a8.png",
+                filename = "__alien_power__/graphics/entity/biter-generator-1/a8.png",
                 width = 32,
                 height = 288,
                 line_length = 64,
@@ -142,7 +142,7 @@ data:extend(
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
         sound = {filename = "__base__/sound/creatures/biter-roar-1.ogg", volume = 0.80},
-        idle_sound = {filename = "__pyalienlifegraphics__/sounds/biter-roar-1.ogg", volume = 0.45},
+        idle_sound = {filename = "__base__/sound/creatures/biter-roar-1.ogg", volume = 0.45},
         apparent_volume = 2.5
     }
 }

@@ -2,16 +2,16 @@ data:extend(
 {
   {
     type = "technology",
-    name = "bitter-power",
-    localised_name = {"technology-name.bitter-power"},
-    localised_description = {"technology-description.bitter-power"},
+    name = "biter-power",
+    localised_name = {"technology-name.biter-power"},
+    localised_description = {"technology-description.biter-power"},
     icon_size = 128,
-    icon = "__alien_power__/graphics/technology/bitter-power.png",
+    icon = "__alien_power__/graphics/technology/biter-power.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "bitter-generator-1"
+        recipe = "biter-generator-1"
       },
 	  {
         type = "unlock-recipe",
@@ -19,11 +19,11 @@ data:extend(
       },
 	  {
         type = "unlock-recipe",
-        recipe = "bitter-gun"
+        recipe = "biter-gun"
       },
 	  {
         type = "unlock-recipe",
-        recipe = "bitter-net"
+        recipe = "biter-net"
       }
     },
     unit =
