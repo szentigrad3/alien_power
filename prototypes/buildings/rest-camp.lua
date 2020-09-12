@@ -1,4 +1,6 @@
-RECIPE {
+data:extend(
+{
+{
     type = "recipe",
     name = "rest-camp",
     energy_required = 0.5,
@@ -13,9 +15,8 @@ RECIPE {
     results = {
         {"rest-camp", 1}
     }
-}
-
-ITEM {
+},
+{
     type = "item",
     name = "rest-camp",
     icon = "__alien_power__/graphics/icons/rest-camp.png",
@@ -25,9 +26,8 @@ ITEM {
     order = "z",
     place_result = "rest-camp",
     stack_size = 10
-}
-
-ENTITY {
+},
+{
     type = "assembling-machine",
     name = "rest-camp",
     icon = "__alien_power__/graphics/icons/rest-camp.png",
@@ -147,3 +147,4 @@ ENTITY {
         apparent_volume = 2.5
     }
 }
+})

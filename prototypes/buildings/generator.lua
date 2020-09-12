@@ -1,4 +1,6 @@
-RECIPE {
+data:extend(
+{
+ {
     type = "recipe",
     name = "bitter-generator-1",
     energy_required = 0.5,
@@ -13,9 +15,8 @@ RECIPE {
     results = {
         {"bitter-generator-1", 1}
     }
-}
-
-ITEM {
+},
+{
     type = "item",
     name = "bitter-generator-1",
     icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
@@ -25,9 +26,8 @@ ITEM {
     order = "a",
     place_result = "bitter-generator-1",
     stack_size = 15
-}
-
-ENTITY {
+},
+{
     type = "burner-generator",
     name = "bitter-generator-1",
     icon = "__alien_power__/graphics/icons/bitter-generator-1.png",
@@ -146,3 +146,4 @@ ENTITY {
         apparent_volume = 2.5
     }
 }
+})

@@ -1,42 +1,43 @@
-RECIPE {
+data:extend(
+{
+ {
     type = 'recipe',
     name = 'bitter-recharge',
-    category = 'rest',
+    category = 'alien-power',
     enabled = false,
     energy_required = 30,
     ingredients = {
         {type = 'item', name = 'used-bitter', amount = 1},
-        {type = 'item', name = 'meat', amount = 5},
+        {type = 'item', name = 'bitter-meat', amount = 5},
     },
     results = {
-        {type = 'item', name = 'bitter-power', amount = 1},
+        {type = 'item', name = 'charged-bitter', amount = 1},
     },
-}
-RECIPE {
+},
+{
     type = 'recipe',
     name = 'bitter-gun',
-    category = 'rest',
+    category = 'alien-power',
     enabled = false,
     energy_required = 30,
     ingredients = {
-        {type = 'item', name = 'tba', amount = 1},
-        {type = 'item', name = 'tba', amount = 5},
+        {type = 'item', name = 'iron-plate', amount = 1},
     },
     results = {
         {type = 'item', name = 'bitter-gun', amount = 1},
     },
-}
-RECIPE {
+},
+{
     type = 'recipe',
     name = 'bitter-net',
-    category = 'rest',
+    category = 'alien-power',
     enabled = false,
     energy_required = 30,
     ingredients = {
-        {type = 'item', name = 'tba', amount = 1},
-        {type = 'item', name = 'tba', amount = 5},
+        {type = 'item', name = 'iron-plate', amount = 1},
     },
     results = {
         {type = 'item', name = 'bitter-net', amount = 1},
     },
 }
+})
