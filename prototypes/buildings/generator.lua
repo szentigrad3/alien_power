@@ -19,8 +19,8 @@ data:extend(
 {
     type = "item",
     name = "biter-generator-1",
-    icon = "__alien_power__/graphics/icons/biter-generator-1.png",
-    icon_size = 64,
+    icon = "__alien_power__/graphics/icons/heg-icon.png",
+    icon_size = 32,
     flags = {},
     subgroup = "alien-generators",
     order = "a",
@@ -30,8 +30,8 @@ data:extend(
 {
     type = "burner-generator",
     name = "biter-generator-1",
-    icon = "__alien_power__/graphics/icons/biter-generator-1.png",
-    icon_size = 64,
+    icon = "__alien_power__/graphics/icons/heg-icon.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "biter-generator-1"},
     max_health = 100,
@@ -59,91 +59,48 @@ data:extend(
 			emissions_per_minute = 0,
 		},
 	effectivity = 1,
-	max_power_output = "15MW",
-    animation = {
-        layers = {
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a1.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-96, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a2.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-64, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a3.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-32, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a4.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(-0, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a5.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(32, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a6.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(64, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a7.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(96, -32)
-            },
-            {
-                filename = "__alien_power__/graphics/entity/biter-generator-1/a8.png",
-                width = 32,
-                height = 288,
-                line_length = 64,
-                frame_count = 250,
-                animation_speed = 0.4,
-                shift = util.by_pixel(128, -32)
-            },
-    },
-},
+	max_power_output = "10MW",
+	animation = {
+				filename = "__alien_power__/graphics/entity/biter-generator-1/heg-va.png",
+				width = 224,
+				height = 146,
+				frame_count = 18,
+				line_length = 9,
+				shift = {0.00, -0.35}
+						},
 
     min_perceived_performance = 0.1,
     performance_to_sound_speedup = 0.0,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__base__/sound/creatures/biter-roar-1.ogg", volume = 0.80},
+        sound = {
+	{
+      filename = "__base__/sound/creatures/biter-roar-1.ogg",
+      volume = 0.80
+    },
+    {
+      filename = "__base__/sound/creatures/biter-roar-2.ogg",
+      volume = 0.80
+    },
+    {
+      filename = "__base__/sound/creatures/biter-roar-3.ogg",
+      volume = 0.80
+    },
+    {
+      filename = "__base__/sound/creatures/biter-roar-4.ogg",
+      volume = 0.80
+    },
+    {
+      filename = "__base__/sound/creatures/biter-roar-5.ogg",
+      volume = 0.80
+    },
+    {
+      filename = "__base__/sound/creatures/biter-roar-6.ogg",
+      volume = 0.80
+    }
+	},
         idle_sound = {filename = "__base__/sound/creatures/biter-roar-1.ogg", volume = 0.45},
         apparent_volume = 2.5
     }
-}
+	}
 })

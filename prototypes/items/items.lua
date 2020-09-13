@@ -40,7 +40,7 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "net",
+      ammo_category = "bullet",
       movement_slow_down_factor = 0.8,
       cooldown = 10,
       projectile_creation_distance = 0.6,
@@ -63,7 +63,7 @@ data:extend(
     icon_size = 64, icon_mipmaps = 4,
     ammo_type =
     {
-      category = "net",
+      category = "bullet",
       action =
       {
         type = "direct",
@@ -80,7 +80,7 @@ data:extend(
         }
       }
     },
-    subgroup = "alien-power",
+    subgroup = "ammo",
     order = "d[biter-gun]-a[basic]",
     stack_size = 200
 	},

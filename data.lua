@@ -1,7 +1,6 @@
 require("prototypes.buildings.generator")
 require("prototypes.buildings.rest-camp")
 require("prototypes.fuel-categories")
-require("prototypes.ammo-categories")
 require("prototypes.recipe-categories")
 require("prototypes.items.itemgroups")
 require("prototypes.items.items")

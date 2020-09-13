@@ -20,7 +20,7 @@ data:extend(
     type = "item",
     name = "rest-camp",
     icon = "__alien_power__/graphics/icons/rest-camp.png",
-    icon_size = 64,
+    icon_size = 32,
     flags = {},
     subgroup = "alien-generators",
     order = "z",
@@ -31,7 +31,7 @@ data:extend(
     type = "assembling-machine",
     name = "rest-camp",
     icon = "__alien_power__/graphics/icons/rest-camp.png",
-	icon_size = 64,
+	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "rest-camp"},
     fast_replaceable_group = "rest-camp",
@@ -55,91 +55,13 @@ data:extend(
     },
     energy_usage = "100kW",
     ingredient_count = 10,
-    animation = {
-        layers = {
-            --off
-            {
-                filename = "__alien_power__/graphics/entity/rest-camp/off.png",
-                width = 320,
-                height = 349,
-                frame_count = 1,
-                shift = util.by_pixel(-0, -16)
-            },
-        }
-    },
-    working_visualisations = {
-
-        {
-            north_position = util.by_pixel(-128, -16),
-            west_position = util.by_pixel(-128, -16),
-            south_position = util.by_pixel(-128, -16),
-            east_position = util.by_pixel(-128, -16),
-            animation = {
-                filename = "__alien_power__/graphics/entity/rest-camp/a1.png",
-                frame_count = 150,
-                line_length = 32,
-                width = 64,
-                height = 349,
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(-64, -16),
-            west_position = util.by_pixel(-64, -16),
-            south_position = util.by_pixel(-64, -16),
-            east_position = util.by_pixel(-64, -16),
-            animation = {
-                filename = "__alien_power__/graphics/entity/rest-camp/a2.png",
-                frame_count = 150,
-                line_length = 32,
-                width = 64,
-                height = 349,
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(-0, -16),
-            west_position = util.by_pixel(-0, -16),
-            south_position = util.by_pixel(-0, -16),
-            east_position = util.by_pixel(-0, -16),
-            animation = {
-                filename = "__alien_power__/graphics/entity/rest-camp/a3.png",
-                frame_count = 150,
-                line_length = 32,
-                width = 64,
-                height = 349,
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(64, -16),
-            west_position = util.by_pixel(64, -16),
-            south_position = util.by_pixel(64, -16),
-            east_position = util.by_pixel(64, -16),
-            animation = {
-                filename = "__alien_power__/graphics/entity/rest-camp/a4.png",
-                frame_count = 150,
-                line_length = 32,
-                width = 64,
-                height = 349,
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = util.by_pixel(128, -16),
-            west_position = util.by_pixel(128, -16),
-            south_position = util.by_pixel(128, -16),
-            east_position = util.by_pixel(128, -16),
-            animation = {
-                filename = "__alien_power__/graphics/entity/rest-camp/a5.png",
-                frame_count = 150,
-                line_length = 32,
-                width = 64,
-                height = 349,
-                animation_speed = 0.5
-            }
-        },
-    },
+	animation =
+		{			
+			north = { filename = "__alien_power__/graphics/entity/rest-camp/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
+			south = { filename = "__alien_power__/graphics/entity/rest-camp/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
+			east = { filename = "__alien_power__/graphics/entity/rest-camp/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,								
+			west = { filename = "__alien_power__/graphics/entity/rest-camp/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,					
+		},		
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
         sound = {filename = "__alien_power__/sounds/rest-camp.ogg", volume = 2.5},

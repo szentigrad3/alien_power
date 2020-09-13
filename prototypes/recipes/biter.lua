@@ -5,6 +5,7 @@ data:extend(
     name = 'biter-recharge',
     category = 'alien-recharge',
     enabled = true,
+	hide_from_player_crafting = true,
     energy_required = 30,
     ingredients = {
         {type = 'item', name = 'used-biter', amount = 1},
