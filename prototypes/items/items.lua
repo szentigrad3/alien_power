@@ -42,7 +42,7 @@ data:extend(
       type = "projectile",
       ammo_category = "bullet",
       movement_slow_down_factor = 0.8,
-      cooldown = 30,
+      cooldown = 90,
       projectile_creation_distance = 0.6,
       range = 36,
       sound =
