@@ -6,6 +6,7 @@ require("prototypes.items.itemgroups")
 require("prototypes.items.items")
 require("prototypes.recipes.biter")
 require("prototypes.technology.technology")
+require("prototypes.entity.projectiles")
 
 local unit_types = {"unit-spawner", "unit", "turret"}
 

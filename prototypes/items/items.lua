@@ -42,14 +42,13 @@ data:extend(
       type = "projectile",
       ammo_category = "bullet",
       movement_slow_down_factor = 0.8,
-      cooldown = 10,
+      cooldown = 30,
       projectile_creation_distance = 0.6,
       range = 36,
-      projectile_center = {-0.17, 0},
       sound =
       {
         {
-          filename = "__base__/sound/fight/rocket-launcher.ogg",
+          filename = "__alien_power__/sounds/biter-gun.ogg",
           volume = 0.7
         }
       }
@@ -60,7 +59,7 @@ data:extend(
     type = "ammo",
     name = "biter-net",
     icon = "__alien_power__/graphics/icons/biter-net.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 128,
     ammo_type =
     {
       category = "bullet",
@@ -69,9 +68,8 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          type = "projectile",
-          projectile = "rocket",
-          starting_speed = 0.1,
+          type = "instant",
+          projectile = "biter-net",
           source_effects =
           {
             type = "create-entity",
