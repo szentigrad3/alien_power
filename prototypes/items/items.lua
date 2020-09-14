@@ -41,7 +41,7 @@ data:extend(
     {
       type = "projectile",
       ammo_category = "rocket",
-      movement_slow_down_factor = 0.8,
+      movement_slow_down_factor = 0.1,
       cooldown = 90,
       projectile_creation_distance = 0.6,
       range = 36,
@@ -54,16 +54,16 @@ data:extend(
         }
       }
     },
-    stack_size = 5
+    stack_size = 1
   },
 	{
     type = "ammo",
     name = "biter-net",
     icon = "__alien_power__/graphics/icons/biter-net.png",
     icon_size = 128, icon_mipmaps = 4,
-    ammo_type =
-    {
+    ammo_type = {
       category = "rocket",
+      --clamp_position = true,
       action =
       {
         type = "direct",
@@ -71,15 +71,15 @@ data:extend(
         {
           type = "projectile",
           projectile = "biter-net",
-          starting_speed = 0.1,
+          starting_speed = 0.35,
           source_effects =
           {
             type = "create-entity",
-            entity_name = "explosion-hit",
+            entity_name = "explosion-gunshot"
           }
         }
       }
-	},
+    },
     subgroup = "ammo",
     order = "d[biter-gun]-a[basic]",
     stack_size = 200
