@@ -33,6 +33,7 @@ data:extend(
     type = "projectile",
     name = "biter-net",
     flags = {"not-on-map"},
+	collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
     acceleration = -0.001,
     direction_only = true,
     action = {
@@ -60,7 +61,7 @@ data:extend(
           },
         }
       },
-    },  
+    },
     light = {intensity = 0.5, size = 4},
     animation =
     {

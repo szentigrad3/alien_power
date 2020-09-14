@@ -72,11 +72,11 @@ data:extend(
           type = "projectile",
           projectile = "biter-net",
           starting_speed = 0.35,
-          source_effects =
+		  source_effects =
           {
             type = "create-entity",
             entity_name = "explosion-gunshot"
-          }
+          },
         }
       }
     },
