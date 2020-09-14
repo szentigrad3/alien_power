@@ -16,7 +16,7 @@ data:extend(
         {
           {
             type = "damage",
-            damage = {amount = 12, type = "impact"}
+            damage = {amount = 12, type = "physical"}
           },
 		}
 	  }
@@ -26,17 +26,9 @@ data:extend(
     {
       filename = "__alien_power__/graphics/entity/biter-net.png",
       frame_count = 1,
-      width = 9,
-      height = 35,
+      width = 128,
+      height = 128,
       priority = "high"
-    },
-    shadow =
-    {
-      filename = "__alien_power__/graphics/entity/biter-net-shadow.png",
-      frame_count = 1,
-      width = 7,
-      height = 24,
-      priority = "high",
     },
   }
 })

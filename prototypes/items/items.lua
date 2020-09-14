@@ -30,7 +30,7 @@ data:extend(
     order = "x",
     stack_size = 1
 	},
-	{
+  {
     type = "gun",
     name = "biter-gun",
     icon = "__alien_power__/graphics/icons/biter-gun.png",
@@ -40,11 +40,12 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "bullet",
+      ammo_category = "rocket",
       movement_slow_down_factor = 0.8,
       cooldown = 90,
       projectile_creation_distance = 0.6,
       range = 36,
+      projectile_center = {-0.17, 0},
       sound =
       {
         {
@@ -54,22 +55,23 @@ data:extend(
       }
     },
     stack_size = 5
-	},
+  },
 	{
     type = "ammo",
     name = "biter-net",
     icon = "__alien_power__/graphics/icons/biter-net.png",
-    icon_size = 128,
+    icon_size = 128, icon_mipmaps = 4,
     ammo_type =
     {
-      category = "bullet",
+      category = "rocket",
       action =
       {
         type = "direct",
         action_delivery =
         {
-          type = "instant",
+          type = "projectile",
           projectile = "biter-net",
+          starting_speed = 0.1,
           source_effects =
           {
             type = "create-entity",
@@ -77,7 +79,7 @@ data:extend(
           }
         }
       }
-    },
+	},
     subgroup = "ammo",
     order = "d[biter-gun]-a[basic]",
     stack_size = 200
