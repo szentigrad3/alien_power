@@ -19,8 +19,9 @@ data:extend(
 {
     type = "item",
     name = "rest-camp",
-    icon = "__alien_power__/graphics/icons/rest-camp.png",
-    icon_size = 32,
+    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
     flags = {},
     subgroup = "alien-generators",
     order = "z",
@@ -30,8 +31,9 @@ data:extend(
 {
     type = "assembling-machine",
     name = "rest-camp",
-    icon = "__alien_power__/graphics/icons/rest-camp.png",
-	icon_size = 32,
+    icon = "__base__/graphics/icons/rocket-silo.png",
+  icon_size = 64,
+  icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "rest-camp"},
     fast_replaceable_group = "rest-camp",
@@ -57,10 +59,10 @@ data:extend(
     ingredient_count = 10,
 	animation =
 		{			
-			north = { filename = "__alien_power__/graphics/entity/rest-camp/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
-			south = { filename = "__alien_power__/graphics/entity/rest-camp/cage_v14.png", width = 192, height = 192, shift = {0.375, -0.125}, frame_count = 36, line_length = 9, animation_speed=0.25, },						
-			east = { filename = "__alien_power__/graphics/entity/rest-camp/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,								
-			west = { filename = "__alien_power__/graphics/entity/rest-camp/cage_h14.png", width = 192, height = 192, shift = {0.125, -0.5}, frame_count = 36, line_length = 9, animation_speed=0.25, }	,					
+			north = { filename = "__base__/graphics/entity/rocket-silo/06-rocket-silo.png", width = 300, height = 300, frame_count = 1, line_length = 1, animation_speed=0.25, },						
+			south = { filename = "__base__/graphics/entity/rocket-silo/06-rocket-silo.png", width = 300, height = 300, frame_count = 1, line_length = 1, animation_speed=0.25, },						
+			east  = { filename = "__base__/graphics/entity/rocket-silo/06-rocket-silo.png", width = 300, height = 300, frame_count = 1, line_length = 1, animation_speed=0.25, },								
+			west  = { filename = "__base__/graphics/entity/rocket-silo/06-rocket-silo.png", width = 300, height = 300, frame_count = 1, line_length = 1, animation_speed=0.25, },					
 		},		
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {

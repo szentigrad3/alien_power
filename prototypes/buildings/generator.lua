@@ -19,8 +19,9 @@ data:extend(
 {
     type = "item",
     name = "biter-generator-1",
-    icon = "__alien_power__/graphics/icons/heg-icon.png",
-    icon_size = 32,
+    icon = "__base__/graphics/icons/market.png",
+    icon_size = 64,
+    icon_mipmaps=4,
     flags = {},
     subgroup = "alien-generators",
     order = "a",
@@ -30,8 +31,9 @@ data:extend(
 {
     type = "burner-generator",
     name = "biter-generator-1",
-    icon = "__alien_power__/graphics/icons/heg-icon.png",
+    icon = "__base__/graphics/icons/market.png",
     icon_size = 32,
+    icon_mipmaps=4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "biter-generator-1"},
     max_health = 100,
@@ -61,11 +63,11 @@ data:extend(
 	effectivity = 1,
 	max_power_output = "10MW",
 	animation = {
-				filename = "__alien_power__/graphics/entity/biter-generator-1/heg-va.png",
-				width = 224,
-				height = 146,
-				frame_count = 18,
-				line_length = 9,
+				filename = "__base__/graphics/entity/market/market.png",
+				width = 156,
+				height = 127,
+				frame_count = 1,
+				line_length = 1,
 				shift = {0.00, -0.35}
 						},
 
