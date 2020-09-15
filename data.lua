@@ -5,8 +5,8 @@ require("prototypes.recipe-categories")
 require("prototypes.items.itemgroups")
 require("prototypes.items.items")
 require("prototypes.recipes.biter")
+require("prototypes.capsule")
 require("prototypes.technology.technology")
-require("prototypes.entity.projectiles")
 
 function AddLootToEntity(entityType, entityName, probability, countMin, countMax)
 	if data.raw[entityType] ~= nil then
@@ -14,7 +14,7 @@ function AddLootToEntity(entityType, entityName, probability, countMin, countMax
 			if data.raw[entityType][entityName].loot == nil then
 				data.raw[entityType][entityName].loot = {}
 			end
-			table.insert(data.raw[entityType][entityName].loot, { item = "biter-meat", probability = probability, count_min = countMin, count_max = math.floor(countMax + 0.5) })
+			table.insert(data.raw[entityType][entityName].loot, { item = "small-biter-meat", probability = probability, count_min = countMin, count_max = math.floor(countMax + 0.5) })
 		end
 	end
 end
