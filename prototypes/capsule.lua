@@ -11,7 +11,7 @@ data:extend(
     type = "capsule",
     name = "capture-capsule-1",
     icon = "__alien_power__/graphics/icons/capture-capsule-1.png",
-	icon_size = 32,
+	icon_size = 64,
     capsule_action =
     {
       type = "throw",
@@ -72,8 +72,8 @@ data:extend(
     {
       filename = "__alien_power__/graphics/icons/capture-capsule-1.png",
       frame_count = 1,
-      width = 32,
-      height = 32,
+      width = 64,
+      height = 64,
       priority = "high"
     },
     shadow =
@@ -118,7 +118,8 @@ for index, order in pairs(orderDict) do
 	ent.name = "capture-capsule-" .. index
 	ent.icon = "__alien_power__/graphics/icons/capture-capsule-" .. index .. ".png"
 	ent.order = "h[capture-capsules]-" .. order .. "[capture-capsule-" .. index .. "]"
-	ent.capsule_action.attack_parameters.ammo_type.action.action_delivery.projectile = "capture-capsule-" .. index
+  ent.capsule_action.attack_parameters.ammo_type.action.action_delivery.projectile = "capture-capsule-" .. index
+  ent.capsule_action.attack_parameters.range= tonumber(index) * ent.capsule_action.attack_parameters.range
 	data:extend({ent})
 
 	ent = util.table.deepcopy(data.raw["projectile"]["capture-capsule-1"])

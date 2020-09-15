@@ -4,7 +4,7 @@ data:extend(
 		type = "technology",
 		name = "capture-capsule-1",
 		icon = "__alien_power__/graphics/icons/capture-capsule-1.png",
-		icon_size = 32,
+		icon_size = 64,
 		effects =
 		{
 			{
@@ -36,7 +36,7 @@ data:extend(
 		type = "technology",
 		name = "capture-capsule-2",
 		icon = "__alien_power__/graphics/icons/capture-capsule-2.png",
-		icon_size = 32,
+		icon_size = 64,
 		effects =
 		{
 			{
@@ -61,7 +61,7 @@ data:extend(
 		type = "technology",
 		name = "capture-capsule-3",
 		icon = "__alien_power__/graphics/icons/capture-capsule-3.png",
-		icon_size = 32,
+		icon_size = 64,
 		effects =
 		{
 			{
@@ -86,7 +86,7 @@ data:extend(
 		type = "technology",
 		name = "capture-capsule-4",
 		icon = "__alien_power__/graphics/icons/capture-capsule-4.png",
-		icon_size = 32,
+		icon_size = 64,
 		effects =
 		{
 			{

@@ -32,18 +32,18 @@ function AddLootToVanillaEnemies()
 	AddLootToEntity("unit", "medium-spitter", MEDIUM_LOOT_PROBABILITY, 1, 2 * AMOUNT)
 	AddLootToEntity("unit", "medium-biter", MEDIUM_LOOT_PROBABILITY, 1, 2 * AMOUNT)
 
-	AddLootToEntity("unit", "big-spitter", BIG_LOOT_PROBABILITY, 1, 5 * AMOUNT)
-	AddLootToEntity("unit", "big-biter", BIG_LOOT_PROBABILITY, 1, 5 * AMOUNT)
+	AddLootToEntity("unit", "big-spitter", BIG_LOOT_PROBABILITY, 2, 5 * AMOUNT)
+	AddLootToEntity("unit", "big-biter", BIG_LOOT_PROBABILITY, 2, 5 * AMOUNT)
 
-	AddLootToEntity("unit", "behemoth-spitter", 1, 2, 20 * AMOUNT)
-	AddLootToEntity("unit", "behemoth-biter", 1, 2, 20 * AMOUNT)
+	AddLootToEntity("unit", "behemoth-spitter", 1, 5, 10 * AMOUNT)
+	AddLootToEntity("unit", "behemoth-biter", 1, 5, 10 * AMOUNT)
 
-	AddLootToEntity("turret", "little-worm-turret", 1, 1, 5 * AMOUNT)
-	AddLootToEntity("turret", "medium-worm-turret", 1, 1, 10 * AMOUNT)
-	AddLootToEntity("turret", "big-worm-turret", 1, 1, 25 * AMOUNT)
+	AddLootToEntity("turret", "little-worm-turret", 1, 1, 2 * AMOUNT)
+	AddLootToEntity("turret", "medium-worm-turret", 1, 1, 4 * AMOUNT)
+	AddLootToEntity("turret", "big-worm-turret", 1, 1, 6 * AMOUNT)
 
-	AddLootToEntity("unit-spawner", "biter-spawner", 1, 20, 50 * AMOUNT)
-	AddLootToEntity("unit-spawner", "spitter-spawner", 1, 20, 50 * AMOUNT)
+	--AddLootToEntity("unit-spawner", "biter-spawner", 1, 15, 20 * AMOUNT)
+	--AddLootToEntity("unit-spawner", "spitter-spawner", 1, 15, 20 * AMOUNT)
 end
 
 -- This is for the Natural Expansion Mod
