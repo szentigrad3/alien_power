@@ -60,7 +60,7 @@ data:extend(
     order = "x",
     stack_size = 1
 	},
-		{
+	{
     type = "item",
     name = "big-biter-power",
     icons =
@@ -90,7 +90,7 @@ data:extend(
     order = "x",
     stack_size = 1
 	},
-		{
+	{
     type = "item",
     name = "behemoth-biter-power",
     icons =
@@ -109,6 +109,96 @@ data:extend(
 	{
     type = "item",
     name = "behemoth-used-biter",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"},
+        {icon = "__alien_power__/graphics/icons/tired.png"},
+    },
+	icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "x",
+    stack_size = 1
+	},
+			{
+    type = "item",
+    name = "bob-titan-biter-power",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"}
+    },
+    icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "a",
+    stack_size = 300,
+    fuel_category = 'alien-5',
+    fuel_value = '250MJ',
+    burnt_result = 'bob-titan-used-biter'
+	},
+	{
+    type = "item",
+    name = "bob-titan-used-biter",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"},
+        {icon = "__alien_power__/graphics/icons/tired.png"},
+    },
+	icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "x",
+    stack_size = 1
+	},
+			{
+    type = "item",
+    name = "bob-behemoth-biter-power",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"}
+    },
+    icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "a",
+    stack_size = 300,
+    fuel_category = 'alien-6',
+    fuel_value = '250MJ',
+    burnt_result = 'bob-behemoth-used-biter'
+	},
+	{
+    type = "item",
+    name = "bob-behemoth-used-biter",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"},
+        {icon = "__alien_power__/graphics/icons/tired.png"},
+    },
+	icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "x",
+    stack_size = 1
+	},
+			{
+    type = "item",
+    name = "bob-leviathan-biter-power",
+    icons =
+	{
+        {icon = "__alien_power__/graphics/icons/behemoth-biter.png"}
+    },
+    icon_size = 64,
+    flags = {},
+    subgroup = "alien-power",
+    order = "a",
+    stack_size = 300,
+    fuel_category = 'alien-7',
+    fuel_value = '250MJ',
+    burnt_result = 'bob-leviathan-used-biter'
+	},
+	{
+    type = "item",
+    name = "bob-leviathan-used-biter",
     icons =
 	{
         {icon = "__alien_power__/graphics/icons/behemoth-biter.png"},

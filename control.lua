@@ -25,7 +25,9 @@ function captureAlien(capsule)
 			
 			-- handle behemoths who require a master capsule
 			if AlienFarmDict[potentialAlien.name].requiresMaster and capsule.name ~= "capture-capsule-4" then 
+				potentialAlien.surface.create_entity({name = "flying-text", position = potentialAlien.position, text = "needs a master net!", color = {r = 1, g = 0, b = 0}})
 				catchRate = 0
+				return
 			end
 			
 			-- if successful catch, destroy the alien and give the player the appropriate spawn capsule
@@ -37,25 +39,6 @@ function captureAlien(capsule)
 				potentialAlien.surface.create_entity({name = "flying-text", position = potentialAlien.position, text = "miss", color = {r = 1, g = 1, b = 1}})
 			end
 			return 																													-- only allow one capture attempt per capsule
-		end
-	end
-end
-
--- This function returns the name of a alien that can be incubated from an item, or nil if none can
--- We expect capsules to be named like "small-biter-capsules"
-local capsuleSuffix = "-capsule"
-local capsuleSuffixLen = string.len(capsuleSuffix)
-function getResultAlien(itemName)
-	itemNameLen = string.len(itemName)
-	if itemNameLen <= capsuleSuffixLen then return nil end -- return nil if the item name is too short
-	if not string.sub(itemName, itemNameLen - capsuleSuffixLen + 1, itemNameLen) == capsuleSuffix then -- check if the item name ends with "-capsule"
-		return nil
-	else
-		local potentialName = string.sub(itemName, 1, itemNameLen - capsuleSuffixLen) -- the item name without "-capsule"
-		if AlienFarmDict[potentialName] == nil then -- check if the name is a valid alien
-			return nil
-		else
-			return potentialName
 		end
 	end
 end

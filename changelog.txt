@@ -2,7 +2,7 @@
 Version: 0.0.3
 Date: Date: 2020-09-16
   Changes:
-    - Add in support for bobs enemies
+    - Changes in preperation for non-vanilla enemies
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: Date: 2020-09-16
