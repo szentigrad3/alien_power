@@ -32,7 +32,7 @@ if bobmods and bobmods.enemies then
 		["big-worm-turret"] = {order = "a[vanilla]-k", catchRate = 0.40, requiresMaster = false, incubationTime = 60, dropRate = 0.50, evolveResult = nil, evolveRate = 0},
 		--["behemoth-worm-turret"] = {order = "a[vanilla]-l", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
 
-		-- Bob's Mod Enemies [0.13.0]
+		-- Bob's Mod Enemies
 		["bob-big-piercing-biter"] = {order = "b[bobs]-a", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
 		["bob-huge-acid-biter"] = {order = "b[bobs]-b", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
 		["bob-huge-explosive-biter"] = {order = "b[bobs]-c", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
