@@ -60,6 +60,51 @@ data:extend(
         {type = 'item', name = 'behemoth-biter-power', amount = 1},
     },
 },
+ {
+    type = 'recipe',
+    name = 'bob-biter-recharge-1',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'bob-titan-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'bob-titan-biter-power', amount = 1},
+    },
+},
+ {
+    type = 'recipe',
+    name = 'bob-biter-recharge-2',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'bob-behemoth-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'bob-behemoth-biter-power', amount = 1},
+    },
+},
+ {
+    type = 'recipe',
+    name = 'bob-biter-recharge-3',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'bob-leviathan-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'bob-leviathan-biter-power', amount = 1},
+    },
+},
   {
     type = "recipe",
     name = "capture-capsule-1",

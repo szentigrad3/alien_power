@@ -120,6 +120,11 @@ data:extend(
 		},
 		order = "a[capture-capsules]-d[capture-capsule-4]"
 	},
+	}
+)
+if mods["bobenemies"] then
+data:extend(
+{
 		{
 		type = "technology",
 		name = "bob-biter-generator-1",
@@ -200,3 +205,4 @@ data:extend(
 	},
  }
 )
+end

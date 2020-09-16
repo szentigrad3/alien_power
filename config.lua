@@ -7,7 +7,6 @@
 
 AlienFarmDict = {}
 
-if bobmods and bobmods.enemies then
 	AlienFarmDict =
 	{
 		["small-biter"] = {order = "a[vanilla]-a", catchRate = 1.00, requiresMaster = false},
@@ -46,23 +45,7 @@ if bobmods and bobmods.enemies then
 		--["bob-big-fire-worm-turret"] = {order = "b[bobs]-r", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
 		--["bob-big-poison-worm-turret"] = {order = "b[bobs]-s", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
 	}
-else
-	AlienFarmDict =
-	{
-		["small-biter"] = {order = "a[vanilla]-a", catchRate = 1.00, requiresMaster = false},
-		["medium-biter"] = {order = "a[vanilla]-b", catchRate = 0.70, requiresMaster = false},
-		["big-biter"] = {order = "a[vanilla]-c", catchRate = 0.40, requiresMaster = false},
-		["behemoth-biter"] = {order = "a[vanilla]-d", catchRate = 0.25, requiresMaster = true},
-		--["small-spitter"] = {order = "a[vanilla]-e", catchRate = 1.00, requiresMaster = false, incubationTime = 5, dropRate = 0.13, evolveResult = "medium-spitter", evolveRate = 0.05},
-		--["medium-spitter"] = {order = "a[vanilla]-f", catchRate = 0.70, requiresMaster = false, incubationTime = 20, dropRate = 0.20, evolveResult = "big-spitter", evolveRate = 0.03},
-		--["big-spitter"] = {order = "a[vanilla]-g", catchRate = 0.40, requiresMaster = false, incubationTime = 60, dropRate = 0.50, evolveResult = "behemoth-spitter", evolveRate = 0.02},
-		--["behemoth-spitter"] = {order = "a[vanilla]-h", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["small-worm-turret"] = {order = "a[vanilla]-i", catchRate = 1.00, requiresMaster = false, incubationTime = 5, dropRate = 0.13, evolveResult = "medium-worm-turret", evolveRate = 0.05},
-		--["medium-worm-turret"] = {order = "a[vanilla]-j", catchRate = 0.40, requiresMaster = false, incubationTime = 20, dropRate = 0.20, evolveResult = "big-worm-turret", evolveRate = 0.03},
-		--["big-worm-turret"] = {order = "a[vanilla]-k", catchRate = 0.40, requiresMaster = false, incubationTime = 60, dropRate = 0.50, evolveResult = nil, evolveRate = 0},
-		--["behemoth-worm-turret"] = {order = "a[vanilla]-l", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-	}
-end
+
 
 ---------------------------------------------------------
 -- This table holds the efficiency of capture capsules
