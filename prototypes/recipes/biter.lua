@@ -112,4 +112,18 @@ data:extend(
 	},
 	result = "capture-capsule-4"
   },
+    {
+    type = "recipe",
+    name = "recapture-capsule",
+	enabled = "false",
+	hide_from_player_crafting = true,
+	ingredients = 
+    {
+		{"electronic-circuit", 2},
+		{"iron-plate", 3},
+		{"green-wire", 3},
+	},
+	result = "recapture-capsule",
+	result_count = 10
+  },
 })

@@ -1,16 +1,18 @@
+require("config")
+
 local ent  -- placeholder for building each entity
 
 ---------------------------------------------------------
 -- Capture capsules --
 
--- Capture capsule 1
+-- Recapture capsule
 data:extend(
 {
   -- Capture capsule item
   {
     type = "capsule",
-    name = "capture-capsule-1",
-    icon = "__alien_power__/graphics/icons/capture-capsule-1.png",
+    name = "recapture-capsule",
+    icon = "__alien_power__/graphics/icons/recapture-capsule.png",
 	icon_size = 64,
     capsule_action =
     {
@@ -32,7 +34,7 @@ data:extend(
             action_delivery =
             {
               type = "projectile",
-              projectile = "capture-capsule-1",
+              projectile = "recapture-projectile",
               starting_speed = 0.5
             }
           }
@@ -40,14 +42,14 @@ data:extend(
       }
     },
     subgroup = "capsule",
-    order = "h[capture-capsules]-a[capture-capsule-1]",
+    order = "e",
     stack_size = 100
   },
   
-  -- Capture capsule projectile
+  -- Capture capsule projectile (when thrown)
   {
     type = "projectile",
-    name = "capture-capsule-1",
+    name = "recapture-projectile",
     flags = {"not-on-map"},
     acceleration = 0.005,
     action =
@@ -61,7 +63,7 @@ data:extend(
           {
             type = "create-entity",
             show_in_tooltip = false,
-            entity_name = "capture-smoke-1",
+            entity_name = "recapture-capsule",
 			trigger_created_entity = "true",
           },
         }
@@ -70,10 +72,10 @@ data:extend(
     light = {intensity = 0.5, size = 4},
     animation =
     {
-      filename = "__alien_power__/graphics/icons/capture-capsule-1.png",
+      filename = "__alien_power__/graphics/icons/recapture-capsule.png",
       frame_count = 1,
-      width = 64,
-      height = 64,
+      width = 32,
+      height = 32,
       priority = "high"
     },
     shadow =
@@ -87,10 +89,10 @@ data:extend(
     smoke = capsule_smoke,
   },
   
-  -- Capture capsule smoke entity
+  -- Capture capsule smoke/explosion
   {
     type = "explosion",
-    name = "capture-smoke-1",
+    name = "recapture-capsule",
     flags = {"not-on-map"},
     animations =
     {
@@ -111,53 +113,23 @@ data:extend(
   },
 })
 
--- Capture capsules 2, 3, 4, which are clones of 1
-local orderDict = {["2"] = "b", ["3"] = "c", ["4"] = "d"} -- match 2=b, etc, for creating the capsule item order
+-- Capture capsules 1, 2, 3, 4
+local orderDict = {["1"] = "a", ["2"] = "b", ["3"] = "c", ["4"] = "d"} -- match 1=a, etc, for creating the capsule item order
 for index, order in pairs(orderDict) do
-	ent = util.table.deepcopy(data.raw["capsule"]["capture-capsule-1"])
+	ent = util.table.deepcopy(data.raw["capsule"]["recapture-capsule"])
 	ent.name = "capture-capsule-" .. index
 	ent.icon = "__alien_power__/graphics/icons/capture-capsule-" .. index .. ".png"
-	ent.order = "h[capture-capsules]-" .. order .. "[capture-capsule-" .. index .. "]"
-  ent.capsule_action.attack_parameters.ammo_type.action.action_delivery.projectile = "capture-capsule-" .. index
-  ent.capsule_action.attack_parameters.range= tonumber(index) * ent.capsule_action.attack_parameters.range
+	ent.order = order
+	ent.capsule_action.attack_parameters.ammo_type.action.action_delivery.projectile = "capture-projectile-" .. index
 	data:extend({ent})
 
-	ent = util.table.deepcopy(data.raw["projectile"]["capture-capsule-1"])
-	ent.name = "capture-capsule-" .. index
+	ent = util.table.deepcopy(data.raw["projectile"]["recapture-projectile"])
+	ent.name = "capture-projectile-" .. index
 	ent.animation.filename = "__alien_power__/graphics/icons/capture-capsule-" .. index .. ".png"
-	ent.action.action_delivery.target_effects[1].entity_name = "capture-smoke-" .. index
+	ent.action.action_delivery.target_effects[1].entity_name = "capture-capsule-" .. index
 	data:extend({ent})
 
-	ent = util.table.deepcopy(data.raw["explosion"]["capture-smoke-1"])
-	ent.name = "capture-smoke-" .. index
+	ent = util.table.deepcopy(data.raw["explosion"]["recapture-capsule"])
+	ent.name = "capture-capsule-" .. index
 	data:extend({ent})
 end
-
----------------------------------------------------------
--- Alien capsules --
---[[local alienDict = -- lists all aliens and their order to appear in item screens
-	{
-		["small-biter"] = "a", ["medium-biter"] = "b", ["big-biter"] = "c", ["behemoth-biter"] = "d",
-		["small-spitter"] = "e", ["medium-spitter"] = "f", ["big-spitter"] = "g", ["behemoth-spitter"] = "h",
-		["small-worm-turret"] = "i", ["medium-worm-turret"] = "j", ["big-worm-turret"] = "k", --["behemoth-worm-turret"] = "l",
-	}
-for alien, order in pairs(alienDict) do
-	ent = util.table.deepcopy(data.raw["capsule"]["capture-capsule-1"])
-	ent.name = alien .. "-power"
-	ent.icon = "__base__/graphics/icons/biter.png"
-	ent.order = "h[alien-power]-" .. order .. "[" .. alien .. "-power]"
-	ent.capsule_action.attack_parameters.ammo_type.action.action_delivery =
-		  {
-			type = "instant",
-			target_effects =
-			{
-			  {
-				type = "create-entity",
-				show_in_tooltip = false,
-				entity_name = alien,
-				trigger_created_entity = "true",
-			  },
-			}
-		  }
-	data:extend({ent})
-end --]]
