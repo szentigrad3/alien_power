@@ -55,7 +55,6 @@ data:extend(
 		{
 			type = "burner",
 			fuel_category = "alien-1",
-			fuel_category = "alien-1",
 			effectivity = 2,
             fuel_inventory_size = 1,
             burnt_inventory_size = 1,
