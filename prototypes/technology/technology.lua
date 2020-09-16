@@ -43,6 +43,10 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "capture-capsule-2"
 			},
+			{
+				type = "unlock-recipe",
+				recipe = "biter-generator-2"
+			},
 		},
 		prerequisites = {"capture-capsule-1", "advanced-electronics"},
 		unit =
@@ -68,6 +72,10 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "capture-capsule-3"
 			},
+			{
+				type = "unlock-recipe",
+				recipe = "biter-generator-3"
+			},
 		},
 		prerequisites = {"capture-capsule-2", "battery"},
 		unit =
@@ -92,6 +100,10 @@ data:extend(
 			{
 				type = "unlock-recipe",
 				recipe = "capture-capsule-4"
+			},
+			{
+				type = "unlock-recipe",
+				recipe = "biter-generator-4"
 			},
 		},
 		prerequisites = {"capture-capsule-3"},

@@ -12,7 +12,7 @@ data:extend(
     subgroup = "alien-power",
     order = "a",
     stack_size = 300,
-    fuel_category = 'alien',
+    fuel_category = 'alien-1',
     fuel_value = '250MJ',
     burnt_result = 'small-used-biter'
 	},
@@ -42,7 +42,7 @@ data:extend(
     subgroup = "alien-power",
     order = "a",
     stack_size = 300,
-    fuel_category = 'alien',
+    fuel_category = 'alien-2',
     fuel_value = '250MJ',
     burnt_result = 'medium-used-biter'
 	},
@@ -72,7 +72,7 @@ data:extend(
     subgroup = "alien-power",
     order = "a",
     stack_size = 300,
-    fuel_category = 'alien',
+    fuel_category = 'alien-3',
     fuel_value = '250MJ',
     burnt_result = 'big-used-biter'
 	},
@@ -102,7 +102,7 @@ data:extend(
     subgroup = "alien-power",
     order = "a",
     stack_size = 300,
-    fuel_category = 'alien',
+    fuel_category = 'alien-4',
     fuel_value = '250MJ',
     burnt_result = 'behemoth-used-biter'
 	},
@@ -122,8 +122,8 @@ data:extend(
 	},
 	{
     type = "item",
-    name = "small-biter-meat",
-    icon = "__alien_power__/graphics/icons/small-meat.png",
+    name = "biter-meat",
+    icon = "__alien_power__/graphics/icons/meat.png",
     icon_size = 32,
     icon_mipmaps = 6,
     flags = {},

@@ -1,4 +1,7 @@
-require("prototypes.buildings.generator")
+require("prototypes.buildings.generator-1")
+require("prototypes.buildings.generator-2")
+require("prototypes.buildings.generator-3")
+require("prototypes.buildings.generator-4")
 require("prototypes.buildings.rest-camp")
 require("prototypes.fuel-categories")
 require("prototypes.recipe-categories")
@@ -14,7 +17,7 @@ function AddLootToEntity(entityType, entityName, probability, countMin, countMax
 			if data.raw[entityType][entityName].loot == nil then
 				data.raw[entityType][entityName].loot = {}
 			end
-			table.insert(data.raw[entityType][entityName].loot, { item = "small-biter-meat", probability = probability, count_min = countMin, count_max = math.floor(countMax + 0.5) })
+			table.insert(data.raw[entityType][entityName].loot, { item = "biter-meat", probability = probability, count_min = countMin, count_max = math.floor(countMax + 0.5) })
 		end
 	end
 end

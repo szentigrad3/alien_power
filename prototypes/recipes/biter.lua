@@ -2,17 +2,62 @@ data:extend(
 {
  {
     type = 'recipe',
-    name = 'biter-recharge',
+    name = 'biter-recharge-1',
     category = 'alien-recharge',
     enabled = true,
 	hide_from_player_crafting = true,
     energy_required = 30,
     ingredients = {
         {type = 'item', name = 'small-used-biter', amount = 1},
-        {type = 'item', name = 'small-biter-meat', amount = 5},
+        {type = 'item', name = 'biter-meat', amount = 5},
     },
     results = {
         {type = 'item', name = 'small-biter-power', amount = 1},
+    },
+},
+ {
+    type = 'recipe',
+    name = 'biter-recharge-2',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'medium-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'medium-biter-power', amount = 1},
+    },
+},
+ {
+    type = 'recipe',
+    name = 'biter-recharge-3',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'big-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'big-biter-power', amount = 1},
+    },
+},
+ {
+    type = 'recipe',
+    name = 'biter-recharge-4',
+    category = 'alien-recharge',
+    enabled = true,
+	hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+        {type = 'item', name = 'behemoth-used-biter', amount = 1},
+        {type = 'item', name = 'biter-meat', amount = 5},
+    },
+    results = {
+        {type = 'item', name = 'behemoth-biter-power', amount = 1},
     },
 },
   {
@@ -63,7 +108,7 @@ data:extend(
 		{"battery", 1},
 		{"red-wire", 1},
 		{"green-wire", 1},
-		{"small-biter-meat", 1},
+		{"biter-meat", 1},
 	},
 	result = "capture-capsule-4"
   },
