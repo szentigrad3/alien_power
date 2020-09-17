@@ -4,10 +4,17 @@ local healths={}
 --local biter_define={}
 for i,k in pairs(data.raw.unit) do
   if k.subgroup == "enemies" and string.find(i,"biter") then
+    --[[local icons ="__base__/graphics/icons/small-biter.png"
+    if k.icon then
+      icons=k.icon
+    elseif k.icons then
+      icons=k.icons
+    end]]
     biter_listing[#biter_listing+1] = {
       name = k.name,
       health = k.max_health,
       icon = k.icon or k.icons,
+      icon_size = k.icon_size or 32,
       scale = k.run_animation.layers[2].scale,
       tint_1 = k.run_animation.layers[2].tint, 
       tint_2 = k.run_animation.layers[3].tint or nil
@@ -54,35 +61,39 @@ end
 --actually add the items/recipes
 ------------------------------------
 for _,biter in pairs(biter_listing) do
+  local ics,icsu
+  if biter.icon[1] then
+    ics=biter.icon
+  else
+    ics={
+      {icon = biter.icon, icon_size = biter.icon_size},
+      {icon = biter.icon, icon_size = biter.icon_size, tint=biter.tint_1}
+    }
+  end
+  icsu=table.deepcopy(ics)
+  icsu[#icsu]={icon = "__alien_power__/graphics/icons/tired.png",icon_size = 64}
   data:extend(
     {
       {
         type = "item",
         name = biter.name .."-power",
         localised_name = {"item-name.powered-biter",biter.name},
-        icons =
-        {
-          {icon = biter.icon, icon_size = 64},
-          {icon = biter.icon, icon_size = 64, tint=biter.tint_1},
-        },
+        icons = ics,
+        icon_size = biter.icon_size or 32,
         flags = {},
         subgroup = "alien-power",
         order = "a["..biter.name.."]",
         stack_size = 300,
         fuel_category = biter.fuel_category,
-        fuel_value = biter.health .. "kW",
+        fuel_value = biter.health .. "kJ",
         burnt_result = biter.name .."-used"
       },
       {
         type = "item",
         name = biter.name .."-used",
         localised_name = {"item-name.tired-biter",biter.name},
-        icons =
-        {
-          {icon = biter.icon, icon_size = 64},
-          {icon = biter.icon, icon_size = 64, tint=biter.tint_1},
-          {icon = "__alien_power__/graphics/icons/tired.png",icon_size = 64,},
-        },
+        icons = icsu,
+        icon_size = biter.icon_size or 32,
         flags = {},
         subgroup = "alien-power",
         order = "x["..biter.name.."]",
