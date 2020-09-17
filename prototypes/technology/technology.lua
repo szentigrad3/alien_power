@@ -122,7 +122,7 @@ data:extend(
 	},
 	}
 )
-if mods["bobenemies"] then
+--[[if mods["bobenemies"] then
 data:extend(
 {
 		{
@@ -205,4 +205,4 @@ data:extend(
 	},
  }
 )
-end
+end]]
