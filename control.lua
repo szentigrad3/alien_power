@@ -1,12 +1,22 @@
 require("config")
-
+---------------------------------------------------------
+--add generic capture check
+--basically, add biters to the list
+function is_biter(name)
+  --only triggers if not in the prebuilt table
+  if string.find(name,"biter") or string.find("scarab") then -- this should add to the table each time a new biter is found
+    AlienFarmDict[name]= {order = "b["..name.."]", catchRate = 0.25, requiresMaster = false}
+  end
+end
 ---------------------------------------------------------
 -- Keep track of capsule-created objects
 function triggerEntity(event)
 	local ent = event.entity
 	local name = ent.name
 	if AlienFarmCapsules[name] then -- if this is a capture-capsule, try to catch something
-		captureAlien(ent)
+    captureAlien(ent)
+  else
+    is_biter(ent,name)
 	end
 end
 script.on_event(defines.events.on_trigger_created_entity, triggerEntity)
@@ -20,7 +30,7 @@ function captureAlien(capsule)
 	local capturePotentials = capsule.surface.find_entities{{posx - r, posy - r}, {posx + r, posy + r}}
 	for __, potentialAlien in pairs(capturePotentials) do
 		-- if the entity is an alien, try to catch it
-		if AlienFarmDict[potentialAlien.name] then
+		if AlienFarmDict[potentialAlien.name] or is_biter(potentialAlien.name) then
 			local catchRate = AlienFarmCapsules[capsule.name].efficiency * AlienFarmDict[potentialAlien.name].catchRate -- the catch rate is (capsule efficieny) * (alien catch rate)
 			
 			-- handle behemoths who require a master capsule

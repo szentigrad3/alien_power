@@ -3,7 +3,7 @@ local biter_listing={--[[name,health,icon,scale,tint1,tint2]]}
 local healths={}
 --local biter_define={}
 for i,k in pairs(data.raw.unit) do
-  if k.subgroup == "enemies" and string.find(i,"biter") then
+  if k.subgroup == "enemies" and (string.find(i,"biter") or string.find(i,"scarab")) then
     --[[local icons ="__base__/graphics/icons/small-biter.png"
     if k.icon then
       icons=k.icon
