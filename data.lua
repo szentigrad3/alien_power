@@ -13,6 +13,7 @@ require("prototypes.items.items")
 require("prototypes.recipes.biter")
 require("prototypes.capsule")
 require("prototypes.technology.technology")
+require("prototypes.buildings.breeder-building")
 
 function AddLootToEntity(entityType, entityName, probability, countMin, countMax)
 	if data.raw[entityType] ~= nil then
