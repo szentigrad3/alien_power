@@ -77,7 +77,7 @@ for _,biter in pairs(biter_listing) do
       {
         type = "item",
         name = biter.name .."-power",
-        localised_name = {"item-name.powered-biter",biter.name},
+        localised_name = {"item-name.powered-biter",{"entity-name."..biter.name}},
         icons = ics,
         icon_size = biter.icon_size or 32,
         flags = {},
@@ -91,7 +91,7 @@ for _,biter in pairs(biter_listing) do
       {
         type = "item",
         name = biter.name .."-used",
-        localised_name = {"item-name.tired-biter",biter.name},
+        localised_name = {"item-name.tired-biter",{"entity-name."..biter.name}},
         icons = icsu,
         icon_size = biter.icon_size or 32,
         flags = {},
@@ -102,7 +102,7 @@ for _,biter in pairs(biter_listing) do
       {
       type = 'recipe',
       name = biter.name .."-recharging",
-      localised_name = {"recipe-name.recharging",biter.name},
+      localised_name = {"recipe-name.recharging",{"entity-name."..biter.name}},
       category = 'alien-recharge',
       enabled = true,
       hide_from_player_crafting = true,
