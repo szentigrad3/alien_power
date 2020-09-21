@@ -114,7 +114,6 @@ local function onTick(event)
 local artifact_polling_delay = math.max(artifact_polling_delay_secs,1)*60
 local polling_remainder = math.random(artifact_polling_delay)-1
   if event.tick%artifact_polling_delay == polling_remainder then
-
     -- initialization code, runs once
     -- make a mapping from each loot item to how likely each entity name is to drop it
     if not loot_to_entity then
@@ -123,7 +122,7 @@ local polling_remainder = math.random(artifact_polling_delay)-1
         if entity.type == "unit" then
           if entity.loot then
             for _,loot in pairs(entity.loot) do
-              if string.find(loot.item, 'biter-egg') then
+              if string.find(loot.item,"biter%-egg") then
                 if not loot_to_entity[loot.item] then
                   loot_to_entity[loot.item] = {}
                 end
