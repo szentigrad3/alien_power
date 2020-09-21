@@ -144,7 +144,7 @@ local polling_remainder = math.random(artifact_polling_delay)-1
 
     -- make a list of what can spawn at the current evolution factor
     evo_spawn = {}
-    local evo = game.forces.enemy.evolution_factor
+    local evo = game.forces.enemy.evolution_factor or 0.2
     for _,entity in pairs(game.entity_prototypes) do
       if entity.type == "unit-spawner" then
         for _,usd in pairs(entity.result_units) do
@@ -184,9 +184,6 @@ local polling_remainder = math.random(artifact_polling_delay)-1
         if loot_to_entity[entity.stack.name] then
           -- direct loot hatches as expected
           maybe_hatch(entity,entity.stack.name,artifact_hatching_chance)
-        elseif loot_to_entity['small-' .. entity.stack.name] then
-          -- if nothing drops this loot, see if something drops the small version, and spawn that a bit quicker
-          maybe_hatch(entity,'small-' .. entity.stack.name,1-((1-artifact_hatching_chance)^2))
         end
       end
     end

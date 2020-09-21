@@ -11,4 +11,10 @@ data:extend({
     group = "production",
     order = "zz"
   },
+  {
+    type = "item-subgroup",
+    name = "alien-breeder",
+    group = "production",
+    order = "zz"
+  },
 })

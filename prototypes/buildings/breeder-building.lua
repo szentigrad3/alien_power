@@ -163,7 +163,7 @@ data:extend(
 	}
 }
 },
-	crafting_categories = {"basic-crafting", "crafting", "advanced-crafting", "crafting-with-fluid"},
+	crafting_categories = {"alien-breeder"},
     crafting_speed = 1.25,
     energy_source =
     {

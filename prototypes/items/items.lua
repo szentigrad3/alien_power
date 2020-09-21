@@ -18,7 +18,7 @@ data:extend(
 		icon_size = 128,
 		icon_mipmaps = 6,
 		flags = {},
-		subgroup = "alien-power",
+		subgroup = "alien-breeder",
 		order = "a",
 		stack_size = 200
 	}
