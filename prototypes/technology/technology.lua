@@ -105,6 +105,14 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "biter-generator-4"
 			},
+						{
+				type = "unlock-recipe",
+				recipe = "breeder-spawner"
+			},
+						{
+				type = "unlock-recipe",
+				recipe = "breed-biter"
+			},
 		},
 		prerequisites = {"capture-capsule-3"},
 		unit =

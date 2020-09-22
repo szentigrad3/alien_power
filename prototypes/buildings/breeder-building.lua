@@ -5,7 +5,7 @@ data:extend(
       type = "recipe",
       name = "breeder-spawner",
       energy_required = 0.5,
-      enabled = true,
+      enabled = false,
       ingredients = {
         {"steel-plate", 75},
         {"stone-wall", 40},

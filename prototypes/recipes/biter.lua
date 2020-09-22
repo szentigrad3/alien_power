@@ -70,6 +70,7 @@ data:extend(
     type = "recipe",
     name = "breed-biter",
 	category = "alien-breeder",
+	energy_required = 300,
     enabled = "false",
     ingredients =
     {

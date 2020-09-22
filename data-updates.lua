@@ -1,2 +1,3 @@
 require("prototypes.dynamic-biters")
-AddLootToEnemies()
+AddMeatToEnemies()
+AddEggsToEnemies()
