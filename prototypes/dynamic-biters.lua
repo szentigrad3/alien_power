@@ -114,6 +114,22 @@ for _,biter in pairs(biter_listing) do
       results = {
         {type = 'item', name = biter.name .."-power", amount = 1},
       },
-    }
+    },
+	{
+    type = "recipe",
+    name = biter.name .."-breeding",
+	localised_name = {"recipe-name.breeding",{"entity-name."..biter.name}},
+	category = "alien-breeder",
+	energy_required = 300,
+    enabled = false,
+    ingredients =
+    {
+      {"biter-egg", 1},
+    },
+      results = {
+        {type = 'item', name = biter.name .."-power", amount = 1},
+    },
+  },
+	table.insert(data.raw["technology"]["capture-capsule-d"].effects, {type="unlock-recipe", recipe=biter.name .."-breeding"})
   })
 end

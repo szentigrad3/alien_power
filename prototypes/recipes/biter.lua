@@ -66,16 +66,4 @@ data:extend(
     result = "recapture-capsule",
     result_count = 10
   },
-    {
-    type = "recipe",
-    name = "breed-biter",
-	category = "alien-breeder",
-	energy_required = 300,
-    enabled = "false",
-    ingredients =
-    {
-      {"biter-egg", 1},
-    },
-    result = "small-biter-power"
-  },
 })

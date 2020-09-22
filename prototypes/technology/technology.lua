@@ -2,7 +2,7 @@ data:extend(
 {
   	{
 		type = "technology",
-		name = "capture-capsule-1",
+		name = "capture-capsule-a",
 		icon = "__alien_power__/graphics/icons/capture-capsule-1.png",
 		icon_size = 64,
 		effects =
@@ -34,7 +34,7 @@ data:extend(
 	},
 	{
 		type = "technology",
-		name = "capture-capsule-2",
+		name = "capture-capsule-b",
 		icon = "__alien_power__/graphics/icons/capture-capsule-2.png",
 		icon_size = 64,
 		effects =
@@ -48,7 +48,7 @@ data:extend(
 				recipe = "biter-generator-2"
 			},
 		},
-		prerequisites = {"capture-capsule-1", "advanced-electronics"},
+		prerequisites = {"capture-capsule-a", "advanced-electronics"},
 		unit =
 		{
 			count = 10,
@@ -63,7 +63,7 @@ data:extend(
 	},
 	{
 		type = "technology",
-		name = "capture-capsule-3",
+		name = "capture-capsule-c",
 		icon = "__alien_power__/graphics/icons/capture-capsule-3.png",
 		icon_size = 64,
 		effects =
@@ -77,7 +77,7 @@ data:extend(
 				recipe = "biter-generator-3"
 			},
 		},
-		prerequisites = {"capture-capsule-2", "battery"},
+		prerequisites = {"capture-capsule-b", "battery"},
 		unit =
 		{
 			count = 10,
@@ -92,7 +92,7 @@ data:extend(
 	},
 	{
 		type = "technology",
-		name = "capture-capsule-4",
+		name = "capture-capsule-d",
 		icon = "__alien_power__/graphics/icons/capture-capsule-4.png",
 		icon_size = 64,
 		effects =
@@ -109,12 +109,8 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "breeder-spawner"
 			},
-						{
-				type = "unlock-recipe",
-				recipe = "breed-biter"
-			},
 		},
-		prerequisites = {"capture-capsule-3"},
+		prerequisites = {"capture-capsule-c"},
 		unit =
 		{
 			count = 10,
@@ -130,87 +126,3 @@ data:extend(
 	},
 	}
 )
---[[if mods["bobenemies"] then
-data:extend(
-{
-		{
-		type = "technology",
-		name = "bob-biter-generator-1",
-		icon = "__alien_power__/graphics/icons/capture-capsule-4.png",
-		icon_size = 64,
-		effects =
-		{
-			{
-				type = "unlock-recipe",
-				recipe = "bob-biter-generator-1"
-			},
-		},
-		prerequisites = {"capture-capsule-4"},
-		unit =
-		{
-			count = 10,
-			ingredients =
-			{
-				{"automation-science-pack", 1},
-				{"logistic-science-pack", 1},
-				{"chemical-science-pack", 1},
-			},
-			time = 10
-		},
-		order = "a[capture-capsules]-d[capture-capsule-4]"
-	},
-		{
-		type = "technology",
-		name = "bob-biter-generator-2",
-		icon = "__alien_power__/graphics/icons/capture-capsule-4.png",
-		icon_size = 64,
-		effects =
-		{
-			{
-				type = "unlock-recipe",
-				recipe = "bob-biter-generator-2"
-			},
-		},
-		prerequisites = {"bob-biter-generator-1"},
-		unit =
-		{
-			count = 10,
-			ingredients =
-			{
-				{"automation-science-pack", 1},
-				{"logistic-science-pack", 1},
-				{"chemical-science-pack", 1},
-			},
-			time = 10
-		},
-		order = "a[capture-capsules]-d[capture-capsule-4]"
-	},
-		{
-		type = "technology",
-		name = "bob-biter-generator-3",
-		icon = "__alien_power__/graphics/icons/capture-capsule-4.png",
-		icon_size = 64,
-		effects =
-		{
-			{
-				type = "unlock-recipe",
-				recipe = "bob-biter-generator-3"
-			},
-		},
-		prerequisites = {"bob-biter-generator-2"},
-		unit =
-		{
-			count = 10,
-			ingredients =
-			{
-				{"automation-science-pack", 1},
-				{"logistic-science-pack", 1},
-				{"chemical-science-pack", 1},
-			},
-			time = 10
-		},
-		order = "a[capture-capsules]-d[capture-capsule-4]"
-	},
- }
-)
-end]]
