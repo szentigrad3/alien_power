@@ -46,11 +46,11 @@ cut[3]=healths[groups*3] --everything greater than this gets group 4
 --log(serpent.block(healths))
 local biter_splits={}
 for i,b in pairs(biter_listing) do
-  if b.health < cut[1][1] then
+  if b.health <= cut[1][1] then
     b.fuel_category="alien-1"
-  elseif b.health < cut[2][1] then
+  elseif b.health <= cut[2][1] then
     b.fuel_category="alien-2"
-  elseif b.health < cut[3][1] then
+  elseif b.health <= cut[3][1] then
     b.fuel_category="alien-3"
   else
     b.fuel_category="alien-4"
