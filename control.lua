@@ -4,8 +4,8 @@ require("config")
 --basically, add biters to the list
 function is_biter(name)
   --only triggers if not in the prebuilt table
-  if not name then log("Error: no target entity.") return end
-  if string.find(name,"biter") or string.find(name,"scarab") then -- this should add to the table each time a new biter is found
+	if type(name) ~= string then log("Error: target does not have a single name.") return end
+	if string.find(name,"biter") or string.find(name,"scarab") then -- this should add to the table each time a new biter is found
     AlienFarmDict[name]= {order = "b["..name.."]", catchRate = 0.25, requiresMaster = false}
   end
 end
