@@ -121,7 +121,7 @@ for _,biter in pairs(biter_listing) do
       hide_from_player_crafting = true,
       ingredients = {
         {type = 'item', name = biter.name .."-used", amount = 1},
-        {type = 'item', name = 'biter-meat', amount = amount}, --possibly think about setting this per tier?
+        {type = 'item', name = 'biter-meat', amount = amount},
       },
       results = {
         {type = 'item', name = biter.name .."-power", amount = 1},
