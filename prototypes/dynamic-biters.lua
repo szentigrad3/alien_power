@@ -117,7 +117,6 @@ for _,biter in pairs(biter_listing) do
       energy_required = energy,
       localised_name = {"recipe-name.recharging",{"entity-name."..biter.name}},
       category = 'alien-recharge',
-	  energy_required = energy,
       enabled = true,
       hide_from_player_crafting = true,
       ingredients = {
