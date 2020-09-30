@@ -2,49 +2,28 @@
 ---------------------------------------------------------
 -- This file contains global constants which the user can
 -- change to their liking. Please be careful, and only  
--- assign expected values. 					 
+-- assign expected values.
+-- THIS DATA IS USED FOR THE CONTROL STAGE, and for capsule creation in DATA STAGE 					 
 ---------------------------------------------------------
 
 AlienFarmDict = {}
 
 	AlienFarmDict =
 	{
-		["small-biter"] = {order = "a[vanilla]-a", catchRate = 1.00, requiresMaster = false},
-		["medium-biter"] = {order = "a[vanilla]-b", catchRate = 0.70, requiresMaster = false},
-		["big-biter"] = {order = "a[vanilla]-c", catchRate = 0.40, requiresMaster = false},
-		["behemoth-biter"] = {order = "a[vanilla]-d", catchRate = 0.25, requiresMaster = true},
-		--["small-spitter"] = {order = "a[vanilla]-e", catchRate = 1.00, requiresMaster = false, incubationTime = 5, dropRate = 0.13, evolveResult = "medium-spitter", evolveRate = 0.05},
-		--["medium-spitter"] = {order = "a[vanilla]-f", catchRate = 0.70, requiresMaster = false, incubationTime = 20, dropRate = 0.20, evolveResult = "big-spitter", evolveRate = 0.03},
-		--["big-spitter"] = {order = "a[vanilla]-g", catchRate = 0.40, requiresMaster = false, incubationTime = 60, dropRate = 0.50, evolveResult = "behemoth-spitter", evolveRate = 0.02},
-		--["behemoth-spitter"] = {order = "a[vanilla]-h", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["small-worm-turret"] = {order = "a[vanilla]-i", catchRate = 1.00, requiresMaster = false, incubationTime = 5, dropRate = 0.13, evolveResult = "medium-worm-turret", evolveRate = 0.05},
-		--["medium-worm-turret"] = {order = "a[vanilla]-j", catchRate = 0.40, requiresMaster = false, incubationTime = 20, dropRate = 0.20, evolveResult = "big-worm-turret", evolveRate = 0.03},
-		--["big-worm-turret"] = {order = "a[vanilla]-k", catchRate = 0.40, requiresMaster = false, incubationTime = 60, dropRate = 0.50, evolveResult = nil, evolveRate = 0},
-		--["behemoth-worm-turret"] = {order = "a[vanilla]-l", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-
+		["small-biter"]               = {order = "a[vanilla]-a", catchRate = 1.00, requiresMaster = false},
+		["medium-biter"]              = {order = "a[vanilla]-b", catchRate = 0.70, requiresMaster = false},
+		["big-biter"]                 = {order = "a[vanilla]-c", catchRate = 0.40, requiresMaster = false},
+		["behemoth-biter"]            = {order = "a[vanilla]-d", catchRate = 0.25, requiresMaster = true},
 		-- Bob's Mod Enemies
-		--["bob-big-piercing-biter"] = {order = "b[bobs]-a", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-huge-acid-biter"] = {order = "b[bobs]-b", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-huge-explosive-biter"] = {order = "b[bobs]-c", catchRate = 0.25, requiresMaster = true},
-		--["bob-giant-poison-biter"] = {order = "b[bobs]-d", catchRate = 0.25, requiresMaster = true},
-		--["bob-giant-fire-biter"] = {order = "b[bobs]-e", catchRate = 0.25, requiresMaster = true},
-		["bob-titan-biter"] = {order = "b[bobs]-f", catchRate = 0.25, requiresMaster = true},
-		["bob-behemoth-biter"] = {order = "b[bobs]-g", catchRate = 0.25, requiresMaster = true},
-		["bob-leviathan-biter"] = {order = "b[bobs]-g", catchRate = 0.25, requiresMaster = true},
-		
-		--["bob-big-electric-spitter"] = {order = "b[bobs]-i", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-huge-explosive-spitter"] = {order = "b[bobs]-j", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-huge-acid-spitter"] = {order = "b[bobs]-k", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-giant-fire-spitter"] = {order = "b[bobs]-l", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-giant-poison-spitter"] = {order = "b[bobs]-m", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-titan-spitter"] = {order = "b[bobs]-n", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-behemoth-spitter"] = {order = "b[bobs]-o", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-leviathan-spitter"] = {order = "b[bobs]-p", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		
-		--["bob-big-explosive-worm-turret"] = {order = "b[bobs]-q", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-big-fire-worm-turret"] = {order = "b[bobs]-r", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-		--["bob-big-poison-worm-turret"] = {order = "b[bobs]-s", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
-	}
+		["bob-big-piercing-biter"]    = {order = "b[bobs]-a", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
+		["bob-huge-acid-biter"]       = {order = "b[bobs]-b", catchRate = 0.25, requiresMaster = true, incubationTime = 120, dropRate = 1.00, evolveResult = nil, evolveRate = 0},
+		["bob-huge-explosive-biter"]  = {order = "b[bobs]-c", catchRate = 0.25, requiresMaster = true},
+		["bob-giant-poison-biter"]    = {order = "b[bobs]-d", catchRate = 0.25, requiresMaster = true},
+		["bob-giant-fire-biter"]      = {order = "b[bobs]-e", catchRate = 0.25, requiresMaster = true},
+		["bob-titan-biter"]           = {order = "b[bobs]-f", catchRate = 0.25, requiresMaster = true},
+		["bob-behemoth-biter"]        = {order = "b[bobs]-g", catchRate = 0.25, requiresMaster = true},
+		["bob-leviathan-biter"]       = {order = "b[bobs]-g", catchRate = 0.25, requiresMaster = true},
+}
 
 
 ---------------------------------------------------------

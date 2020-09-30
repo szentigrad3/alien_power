@@ -3,6 +3,7 @@ Version: 0.0.8
 Date: Date: 2020-09-29 
   Changes:
     - Make the recharing dynamic per tier
+    - Slight restucture to the code 
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
 Date: Date: 2020-09-26
@@ -29,7 +30,7 @@ Date: Date: 2020-09-22
 Version: 0.0.3
 Date: Date: 2020-09-18
   Changes:
-    - Add in support for non-vanilla enemies
+    - Add in support for non-vanilla enemies (Thanks to pezzawinkle for the support)
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: Date: 2020-09-16

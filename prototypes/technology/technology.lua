@@ -105,7 +105,7 @@ data:extend(
 				type = "unlock-recipe",
 				recipe = "biter-generator-4"
 			},
-						{
+			{
 				type = "unlock-recipe",
 				recipe = "breeder-spawner"
 			},

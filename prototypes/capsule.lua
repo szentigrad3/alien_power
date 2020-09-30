@@ -114,6 +114,7 @@ data:extend(
 })
 
 -- Capture capsules 1, 2, 3, 4
+-- This is done by using the orderDict table to create all 4 tiers of capsules by using the above created recapture-capsule
 local orderDict = {["1"] = "a", ["2"] = "b", ["3"] = "c", ["4"] = "d"} -- match 1=a, etc, for creating the capsule item order
 for index, order in pairs(orderDict) do
 	ent = util.table.deepcopy(data.raw["capsule"]["recapture-capsule"])
