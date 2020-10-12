@@ -16,7 +16,6 @@ require("prototypes.buildings.rest-camp")
 require("prototypes.buildings.breeder-building")
 --ITEMS/TOOLS/CAPSULES
 require("prototypes.items.items")
-require("prototypes.capsule")
 --RECIPES
 require("prototypes.recipes.biter")
 --TECHNOLOGIES
